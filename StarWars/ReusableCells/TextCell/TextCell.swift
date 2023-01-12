@@ -1,9 +1,9 @@
 //
 //  TextCell.swift
-//  Decathlon
+//  StarWars
 //
-//  Created by Ilia Prokhorov on 18.03.2020.
-//  Copyright © 2020 Decathlon. All rights reserved.
+//  Created by Aleksandr Skorotkin on 09.01.2023.
+//  Copyright © 2022 ADSkor. All rights reserved.
 //
 
 import Miji
