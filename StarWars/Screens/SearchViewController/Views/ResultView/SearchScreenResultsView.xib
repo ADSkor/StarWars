@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatalogueSearchResultsView" customModule="StarWars" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="sUs-xX-rVa" id="6XQ-jd-LbS"/>
+                <outlet property="previousButton" destination="sDX-R4-1bb" id="RaD-XG-9As"/>
+                <outlet property="tableView" destination="m2e-EV-sLN" id="qJC-b2-iOm"/>
+                <outlet property="tableViewTopConstarint" destination="ING-ZN-Tyq" id="Y2i-dA-yDt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="283"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpR-nE-Dvz">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="0.0"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDX-R4-1bb">
+                            <rect key="frame" x="0.0" y="0.0" width="112" height="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="&lt;- Previous"/>
+                            <connections>
+                                <action selector="previousButtonDidPressed:" destination="-1" eventType="touchUpInside" id="PJD-Jz-A4t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUs-xX-rVa">
+                            <rect key="frame" x="260" y="0.0" width="112" height="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Next -&gt;"/>
+                            <connections>
+                                <action selector="nextButtonDidPressed:" destination="-1" eventType="touchUpInside" id="0UF-f7-uWt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="sUs-xX-rVa" secondAttribute="trailing" id="1MV-e4-l8m"/>
+                        <constraint firstItem="sUs-xX-rVa" firstAttribute="top" secondItem="gpR-nE-Dvz" secondAttribute="top" id="4BW-HM-PWu"/>
+                        <constraint firstItem="sDX-R4-1bb" firstAttribute="width" secondItem="sUs-xX-rVa" secondAttribute="width" id="83o-xX-T8n"/>
+                        <constraint firstItem="sDX-R4-1bb" firstAttribute="top" secondItem="gpR-nE-Dvz" secondAttribute="top" id="AIT-Z7-0qw"/>
+                        <constraint firstAttribute="bottom" secondItem="sDX-R4-1bb" secondAttribute="bottom" id="ZMv-8U-2o0"/>
+                        <constraint firstItem="sDX-R4-1bb" firstAttribute="leading" secondItem="gpR-nE-Dvz" secondAttribute="leading" id="qKP-GF-gO0"/>
+                        <constraint firstAttribute="bottom" secondItem="sUs-xX-rVa" secondAttribute="bottom" id="zib-v8-gq2"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m2e-EV-sLN">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="283"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m2e-EV-sLN" secondAttribute="trailing" id="BrY-eg-Jqg"/>
+                <constraint firstItem="m2e-EV-sLN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ING-ZN-Tyq"/>
+                <constraint firstItem="m2e-EV-sLN" firstAttribute="top" secondItem="gpR-nE-Dvz" secondAttribute="bottom" id="IVu-ar-Q4f"/>
+                <constraint firstAttribute="trailing" secondItem="gpR-nE-Dvz" secondAttribute="trailing" id="jLh-RT-qDS"/>
+                <constraint firstItem="gpR-nE-Dvz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rz8-OJ-prf"/>
+                <constraint firstItem="gpR-nE-Dvz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tYj-9j-3jT"/>
+                <constraint firstItem="m2e-EV-sLN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uwj-1S-BMB"/>
+                <constraint firstAttribute="bottom" secondItem="m2e-EV-sLN" secondAttribute="bottom" id="w5N-8T-iac"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="53.623188405797109" y="-71.316964285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

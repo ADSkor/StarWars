@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchScreenRecentRequestsView" customModule="StarWars" customModuleProvider="target">
+            <connections>
+                <outlet property="cardsView" destination="Z6M-78-JDu" id="I1r-Wh-mUV"/>
+                <outlet property="titleLabel" destination="m2C-LP-iXD" id="QLk-by-gdj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="История поиска" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2C-LP-iXD">
+                    <rect key="frame" x="16" y="8" width="401" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6M-78-JDu" customClass="AutosizingCardsView" customModule="Miji">
+                    <rect key="frame" x="12" y="40" width="409" height="204"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m2C-LP-iXD" secondAttribute="trailing" constant="16" id="Au3-7c-ndh"/>
+                <constraint firstAttribute="trailing" secondItem="Z6M-78-JDu" secondAttribute="trailing" constant="12" id="BfG-Ol-bZt"/>
+                <constraint firstAttribute="bottom" secondItem="Z6M-78-JDu" secondAttribute="bottom" id="GcJ-aA-Ei5"/>
+                <constraint firstItem="Z6M-78-JDu" firstAttribute="top" secondItem="m2C-LP-iXD" secondAttribute="bottom" constant="8" id="L7F-9m-cQe"/>
+                <constraint firstItem="Z6M-78-JDu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Xi0-QF-Buj"/>
+                <constraint firstItem="m2C-LP-iXD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="lH9-oW-LE8"/>
+                <constraint firstItem="m2C-LP-iXD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="mdD-ic-tn6"/>
+                <constraint firstItem="Z6M-78-JDu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="w8Q-9x-VVz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="68.840579710144937" y="-15.401785714285714"/>
+        </view>
+    </objects>
+</document>
